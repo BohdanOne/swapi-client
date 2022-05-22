@@ -1,0 +1,32 @@
+.toastWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: var(--gutter);
+  background-color: var(--color-bg-primary);
+}
+
+.toastWrapper div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+.close {
+  border-radius: 50%;
+  border: 2px solid;
+  background-color: transparent;
+  color: inherit;
+  margin-left: var(--gutter-big);
+  height: fit-content;
+  cursor: pointer;
+}

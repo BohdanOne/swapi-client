@@ -1,0 +1,7 @@
+.search {
+  grid-area: search;
+}
+
+.search input {
+  padding: var(--gutter-small);
+}

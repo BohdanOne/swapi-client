@@ -1,0 +1,14 @@
+.label span {
+  color: var(--color-warning);
+}
+
+.inputField {
+  margin: var(--gutter-small) 0 var(--gutter);
+  padding: var(--gutter-small);
+  width: 100%;
+}
+
+textarea.inputField {
+  margin-bottom: var(--gutter-big);
+  font: inherit;
+}

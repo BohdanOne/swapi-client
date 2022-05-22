@@ -1,0 +1,10 @@
+.nav {
+  border-bottom: 1px solid var(--color-accent-secondary);
+  padding: var(--gutter);
+  display: flex;
+  align-items: center;
+}
+
+.nav a + a {
+  margin-left: var(--gutter);
+}

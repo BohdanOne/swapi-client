@@ -1,0 +1,11 @@
+.pagination {
+  grid-area: pagination;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--gutter);
+  margin: 0 auto;
+}
+
+.pagination span {
+  grid-column: 2;
+}

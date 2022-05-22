@@ -1,0 +1,82 @@
+query Pagination {
+  allPeople {
+    totalCount,
+    pageInfo {
+      startCursor,
+      endCursor
+    }
+    edges {
+      cursor
+    }
+  }
+}
+
+query People($after: String, $first: Int, $before: String, $last: Int) {
+  allPeople(after: $after, first: $first, before: $before, last: $last) {
+    totalCount
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    people {
+      id
+      name
+      homeworld {
+        id
+        name
+      }
+    }
+  }
+}
+
+query Person($id: ID) {
+  person(id: $id) {
+    id
+    name
+    homeworld {
+      id
+      name
+    }
+    birthYear
+    gender
+    eyeColor
+    hairColor
+    height
+    mass
+  }
+}
+
+query Planets {
+  allPlanets {
+    planets {
+      name
+      id
+    }
+  }
+}
+
+query Planet($id: ID) {
+  planet(id: $id) {
+    id,
+    name,
+    diameter,
+    rotationPeriod,
+    orbitalPeriod,
+    gravity,
+    population,
+    climates,
+    terrains,
+    surfaceWater,
+  }
+}
+
+query Films {
+  allFilms {
+    films {
+      title
+      id
+    }
+  }
+}

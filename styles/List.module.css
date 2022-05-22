@@ -1,0 +1,29 @@
+.pageContent {
+  display: grid;
+  grid-template-areas:
+  'filters'
+  'people'
+  'pagination';
+  gap: var(--gutter-big);
+  max-width: 600px;
+}
+
+.filters {
+  grid-area: filters;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+@media (min-width: 600px) {
+  .pageContent {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'filters people'
+    'filters people'
+    'pagination pagination';
+  }
+  .filters {
+    gap: var(--gutter-big);
+  }
+}

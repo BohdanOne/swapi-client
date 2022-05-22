@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout main {
+  flex-grow: 1;
+  padding: var(--gutter);
+}
+
+@media (min-width: 600px) {
+  .layout main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

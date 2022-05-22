@@ -1,0 +1,40 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  background-color: var(--color-bg-primary);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.modal {
+  position: relative;
+  background-color: var(--color-bg-primary);
+  padding: var(--gutter-big);
+  border-radius: var(--border-radius);
+  filter: drop-shadow(3px 3px 10px var(--color-primary));
+}
+
+.close {
+  position: absolute;
+  top: var(--gutter-small);
+  right: var(--gutter-small);
+}

@@ -1,0 +1,4 @@
+.personData p {
+  margin-bottom: var(--gutter-small);
+  min-width: 250px;
+}
