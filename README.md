@@ -14,7 +14,7 @@ User can:
 
 ## Installation
 ### Server
-In order to run the app ypu need to install and launch `swapi-graphql`
+In order to run the app you need to install and launch `swapi-graphql` first
 
 1. Clone API repo
 ```
